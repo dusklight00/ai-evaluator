@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Evaluator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>AI Evaluator</h1>
+        <p>Evaluation powered by AI!</p> 
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+           
+            <center>
+                <div id="upload_image">
+                    <h3>Upload Image</h3><br>
+                    <input type="file" name="" id=""><br>
+                </div>
+                <div id="uploaded_image">
+                    <img src="answer.png" alt="answer" width="50%"><br><br>
+                </div>
+                <input type="submit" value="Upload" id="upload_btn">
+                <input type="submit" value="Submit" id="submit_btn"><br><br>
+            </center>
+            <br>
+            <div class="well">
+                <b>Total Marks : <span id="marks">*/5</span></b>
+            </div>   
+        </div>
+        <div class="col-sm-4">
+            <center>
+                
+        
+                <div class="well">
+                    <h3>
+                        Marking Scheme
+                    </h3>
+                    
+                    
+                    <div id="unloaded_progress">
+                        <p>
+                            <b>Clarity (2 marks)</b>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                        </div>
+                        <p>
+                            <b>Accuracy (2 marks)</b>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                        </div>
+                        <p>
+                            <b>Keywords (1 marks)</b>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="loading">
+                        Loading ...
+                    </div>
+                    
+                    <div id="loaded_progress">
+                        <p>
+                            <b>Clarity (2 marks)</b>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                        </div>
+                        <p>
+                            <b>Accuracy (2 marks)</b>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                        </div>
+                        <p>
+                            <b>Keywords (1 marks)</b>
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="usr">Question</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">Actual Answer</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+
+    
+</body>
+</html>
